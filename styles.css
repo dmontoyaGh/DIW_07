@@ -1,59 +1,59 @@
 /* RESET DE ESTILOS BÁSICOS */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 0 20px;
+  font-family: Arial, sans-serif; /* Fuente por defecto */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #333; /* Color del texto */
+  background-color: #f9f9f9; /* Color de fondo a una tonalidad de blanco */
+  padding: 0 20px; /* Espacio a los lados del contenido */
 }
 
 /* ESTILOS DEL ENCABEZADO */
 .header {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #ffcc80;
-  color: #333;
+  text-align: center; /* Centrar el texto */
+  padding: 20px 0; /* Espacio arriba y abajo */
+  background-color: #ffcc80; /* Color de fondo del encabezado */
+  color: #333; /* Color del texto */
 }
 
 .header .title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.5rem; /* Tamaño de fuente del título */
+  font-weight: bold; /* En negrita */
 }
 
 .header .subtitle {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1.2rem; /* Tamaño de fuente del subtítulo */
+  margin-top: 10px; /* Espacio entre el título y el subtítulo */
 }
 
 /* ESTILOS DE LA SECCIÓN DE PRESENTACIÓN */
 .presentation {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 1.1rem;
-  color: #555;
+  text-align: center; /* Centrar el texto */
+  margin: 40px 0; /* Espacio alrededor de la sección */
+  font-size: 1.1rem; /* Tamaño de fuente del texto */
+  color: #555; /* Color del texto de la presentación */
 }
 
 /* ESTILOS DE LA GALERÍA */
 .gallery {
-  margin: 20px 0;
+  margin: 60px 0; /* Espacio alrededor de la galería */
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #444;
+  margin-bottom: 50px;
+  color: #444; /* Color del título de la sección */
 }
 
 .gallery-item:nth-child(2) p {
   margin-left: 0px; /* Alínea label "Gato" */
-  margin-top: 0px;
+  margin-top: 0px; /* Alínea label "Gato" */
 }
 
 .gallery-item:nth-child(2) .cat-svg {
@@ -61,18 +61,18 @@ body {
 }
 
 .gallery-container {
-  display: flex;
+  display: flex; /* Usar Flexbox para la galería */
   flex-wrap: no-wrap; /* Permite que los elementos se ajusten en varias filas */
-  justify-content: center;
+  justify-content: center; /* Centrar los elementos horizontalmente */
   gap: 30px; /* Espaciado entre elementos */
 }
 
 .gallery-item {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
+  text-align: center; /* Centrar el contenido */
+  background-color: #fff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 15px; /* Espaciado interno */
   width: 200px; /* Ancho fijo para los elementos */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -83,26 +83,26 @@ body {
 }
 
 .gallery-item p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #666;
+  margin-top: 10px; /* Espacio entre el SVG y el texto */
+  font-size: 1rem; /* Tamaño de fuente del texto */
+  color: #666; /* Color del texto de la descripción */
 }
 
 /* ESTILOS DEL BOTÓN DE LLAMADA A LA ACCIÓN */
 .cta {
-  text-align: center;
-  margin: 30px 0;
+  text-align: center; /* Centrar el botón */
+  margin: 60px 0; /* Espacio alrededor del botón */
 }
 
 .cta-button {
   background-color: #ff7043;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: #fff; /* Color del texto a blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
 }
 
 .cta-button:hover {
@@ -124,18 +124,18 @@ body {
   }
 
   .cta-button {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    font-size: 0.9rem; /* Reducir el tamaño del botón */
+    padding: 8px 16px; /* Ajustar el padding del botón */
   }
 }
 
 @media (max-width: 480px) {
   .header .title {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Reducir aún más el tamaño del título */
   }
 
   .header .subtitle {
-    font-size: 1rem;
+    font-size: 1rem; /* Reducir el tamaño del subtítulo */
   }
 
   .gallery-item {
@@ -187,12 +187,12 @@ body {
 
 .cat-svg .left-eye,
 .dog-svg .left-eye {
-    animation-delay: 0s; /* Blink first */
+    animation-delay: 0s; /* Parpadeo inicial */
 }
 
 .cat-svg .right-eye,
 .dog-svg .right-eye {
-    animation-delay: 0.1s; /* Blink second */
+    animation-delay: 0.1s; /* Retrasa el parpadeo respecto al otro ojo para crear sensación de realidad */
 }
 
 @keyframes blink {
@@ -221,8 +221,8 @@ body {
 /* ANIMACIÓN PARA MOVER BIGOTES DEL GATO */
 svg #Bigotes {
   /* Rota los bigotes de la mascota */
-  transform-origin: center 35px;
-  animation: move-bigotes 3s infinite;
+  transform-origin: center 35px; /* Define el punto de origen para la rotación */
+  animation: move-bigotes 3s infinite; /* Aplica la animación de movimiento continuo */
 }
 
 @keyframes move-bigotes {
@@ -249,17 +249,17 @@ svg #Bigotes {
 /* Animación de trazo progresivo (stroke drawing) */
 @keyframes draw {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 1000; /* Comienza con el trazo oculto */
   }
   to {
-    stroke-dashoffset: 10;
+    stroke-dashoffset: 10;  /* Termina con el trazo casi completo */
   }
 }
 
 /* Aplicación de la animación de mover la boca y dibujarla al perro */
 .dog-svg .mouth {
-  transform-origin: center;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 40s ease forwards, shake-mouth 4s infinite;
+  transform-origin: center; /* Define el punto de origen para la rotación */
+  stroke-dasharray: 1000; /* Longitud total del trazo */
+  stroke-dashoffset: 1000; /* Comienza con el trazo oculto */
+  animation: draw 40s ease forwards, shake-mouth 4s infinite; /* Aplica la animación de trazo y movimiento */
 }
